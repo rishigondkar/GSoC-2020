@@ -1,0 +1,426 @@
+[
+  {
+    "text": "hello is anybody there",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.39396465306506806
+    }
+  },
+  {
+    "text": "heeey",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "reject",
+      "confidence": 0.7665298469289806
+    }
+  },
+  {
+    "text": "yo",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "reject",
+      "confidence": 0.385318802899485
+    }
+  },
+  {
+    "text": "hola",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "reject",
+      "confidence": 0.40734419188792353
+    }
+  },
+  {
+    "text": "correct",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.6560903899569694
+    }
+  },
+  {
+    "text": "let's do it",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.31951209959604043
+    }
+  },
+  {
+    "text": "um yes",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "reject",
+      "confidence": 0.5404821146643165
+    }
+  },
+  {
+    "text": "yes knocking",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "reject",
+      "confidence": 0.2614779162512027
+    }
+  },
+  {
+    "text": "that's correct",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.39141883701446883
+    }
+  },
+  {
+    "text": "yes and i dont care",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "reject",
+      "confidence": 0.40912458977979643
+    }
+  },
+  {
+    "text": "right on",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "reject",
+      "confidence": 0.31263423617296354
+    }
+  },
+  {
+    "text": "not sure",
+    "intent": "reject",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.5367056160213454
+    }
+  },
+  {
+    "text": "no thanks",
+    "intent": "reject",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.2619461667735998
+    }
+  },
+  {
+    "text": "no thank you",
+    "intent": "reject",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.35433888309508593
+    }
+  },
+  {
+    "text": "do you have something else",
+    "intent": "reject",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.4091270417119313
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.50844022684736
+    }
+  },
+  {
+    "text": "can you share your boss with me?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.3723117936564516
+    }
+  },
+  {
+    "text": "i want to get to know your owner",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.32920352407946596
+    }
+  },
+  {
+    "text": "i want to know the company which designed you",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.42326862403183596
+    }
+  },
+  {
+    "text": "i want to know the company which generated you",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.38426404125609964
+    }
+  },
+  {
+    "text": "i want to know the company which invented you",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.3579663570302154
+    }
+  },
+  {
+    "text": "i want to know who invented you",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.40095553991673233
+    }
+  },
+  {
+    "text": "May I ask who invented you?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.4286917827813078
+    }
+  },
+  {
+    "text": "please tell me the company who created you",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.40000975664828875
+    }
+  },
+  {
+    "text": "please tell me who created you",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.4904763885056977
+    }
+  },
+  {
+    "text": "tell me more about your creators",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.38894543073835364
+    }
+  },
+  {
+    "text": "tell me more about your founders",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.29938215365106463
+    }
+  },
+  {
+    "text": "Ahoy matey how are you?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.3669490155204188
+    }
+  },
+  {
+    "text": "are you alright",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.6485765820973451
+    }
+  },
+  {
+    "text": "are you having a good day",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.33632181121752774
+    }
+  },
+  {
+    "text": "Are you ok?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.5710782272160518
+    }
+  },
+  {
+    "text": "are you okay",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.6626849819832941
+    }
+  },
+  {
+    "text": "Do you feel good?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.40493678937532274
+    }
+  },
+  {
+    "text": "how are things going",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.5531162808772034
+    }
+  },
+  {
+    "text": "how are things with you?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.40628685632537465
+    }
+  },
+  {
+    "text": "How are things?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.4415251665362734
+    }
+  },
+  {
+    "text": "how are you",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.48255890015813424
+    }
+  },
+  {
+    "text": "how are you doing",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.41788024857206596
+    }
+  },
+  {
+    "text": "how are you doing this morning",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.30241456924511173
+    }
+  },
+  {
+    "text": "how are you feeling",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.4501075262049263
+    }
+  },
+  {
+    "text": "how are you today",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.3686288337891743
+    }
+  },
+  {
+    "text": "How are you?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.4126924648255434
+    }
+  },
+  {
+    "text": "How is the weather today?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.26029072914399587
+    }
+  },
+  {
+    "text": "What's the weather like?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.29158037838522155
+    }
+  },
+  {
+    "text": "How is the weather?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.32104520530786373
+    }
+  },
+  {
+    "text": "What is the weather at your place?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.30231872305499957
+    }
+  },
+  {
+    "text": "Do you have good weather?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "repeat",
+      "confidence": 0.32773055701550063
+    }
+  },
+  {
+    "text": "Is it raining?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.38709157592348536
+    }
+  },
+  {
+    "text": "What's it like out there?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.38682993299166435
+    }
+  },
+  {
+    "text": "Is it hot or cold?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.384158582461904
+    }
+  },
+  {
+    "text": "Beautiful day, isn't it?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.29703458603760274
+    }
+  },
+  {
+    "text": "What's the weather forecast?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.2799984944623328
+    }
+  },
+  {
+    "text": "Is it quite breezy outside?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.264181157631861
+    }
+  }
+]
