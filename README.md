@@ -77,22 +77,32 @@ To avoid changing the *config* file in the repository, we can copy it to the com
 
 > Create a file named .rcremote in the HOME folder, as indicated above. Add the following line to it: localhost#abcd123
 
+### File Paths
+
+```
+conversationalAgent = /home/robocomp/robocomp/components/robocomp-viriato/components/conversationalAgent
+
+deployment_GSoC_conversationalAgent.xml = /home/robocomp/robocomp/components/robocomp-viriato/etcSim/deployment_GSoC_conversationalAgent.xml
+
+executiveGSoC.conf = /home/robocomp/robocomp/components/robocomp-viriato/etcSim/executiveGSoC.conf
+
+conversationalAgent.conf = /home/robocomp/robocomp/components/robocomp-viriato/etcSim/conversationalAgent.conf
+
+humanObserverAgent_GSoC_GUI.conf = /home/robocomp/robocomp/components/robocomp-viriato/etcSim/humanObserverAgent_GSoC_GUI.conf
+
+mission.conf = /home/robocomp/robocomp/components/robocomp-viriato/etcSim/mission.conf
+
+navigation_usecases_simple.aggl = /home/robocomp/robocomp/components/robocomp-viriato/aggl_plans/navigation_usecases_simple.aggl
+
+path_blocked.aggt = /home/robocomp/robocomp/components/robocomp-viriato/etc/path_blocked.aggt
+
+targetModelGSoC-none.aggt = /home/robocomp/robocomp/components/robocomp-viriato/etc/targetModelGSoC-none.aggt
+```
+
 - You can run the file deployment_GSoC_conversationalAgent.xml using the following command after starting the rcremoteserver:
 
 ```
 rcmanagersimple deployment_GSoC_conversationalAgent.xml
 ```
-To create config file:
 
-```
-cd <conversationalAgent's path>
-```
-```
-cp etc/config config
-```
 
-After editing the new config file we can run the component:
-
-```
-python3 src/conversationalAgent config
-```
