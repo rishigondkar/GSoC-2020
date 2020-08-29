@@ -82,6 +82,7 @@ To avoid changing the *config* file in the repository, we can copy it to the com
 ```
 rcmanagersimple deployment_GSoC_conversationalAgent.xml
 ```
+To create config file:
 
 ```
 cd <conversationalAgent's path>
