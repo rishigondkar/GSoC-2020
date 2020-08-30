@@ -64,13 +64,11 @@ class actionSetGender(Action):
     return "action_set_gender"
 
   def run(self, dispatcher, tracker, domain):
-    #self.AGMinit()
     with open('person_attributes.json', 'r') as openfile: 
         # Reading from json file 
         json_object = json.load(openfile)
     
     data = json_object["imGender"]
-    #data = input("Enter gender = ")
     SlotSet("gender", data)
     return [SlotSet("gender", data)]
 
@@ -80,13 +78,11 @@ class actionSetSituation(Action):
     return "action_set_situation"
 
   def run(self, dispatcher, tracker, domain):
-    #self.AGMinit()
     with open('person_attributes.json', 'r') as openfile: 
         # Reading from json file 
         json_object = json.load(openfile)
     
     data = json_object["imSituation"]
-    #data = input("Enter gender = ")
     SlotSet("situation", data)
     return [SlotSet("situation", data)]
 
