@@ -18,8 +18,8 @@ Rasa has three main modules:
 >The invocations for the intent are stored in the NLU.md file.
 
 **Rasa Core—** Here Rasa helps with contextual message flow. Based on user message and intent classification by NLU it decides the response to be sent to the user. 
-The responses are selected from the actions pre-written in the domain.yml file in the template section. 
-The stories.md file contains the story templates. Rasa controls the flow of conversation between the user and chatbot according to theses templates, so for that flow, we need to train chatbot using these stories.
+ The responses are selected from the actions pre-written in the domain.yml file in the template section. 
+ The stories.md file contains the story templates. Rasa controls the flow of conversation between the user and chatbot according to theses templates, so for that flow, we need to train chatbot using these stories.
 
 **Rasa Action Server—** This server handles the execution of actions defined iin actions.py file.
 
