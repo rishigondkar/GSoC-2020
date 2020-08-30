@@ -457,6 +457,8 @@ class SpecificWorker(GenericWorker):
         self.interaction.hide()
         r = requests.post('http://localhost:5002/conversations/default/tracker/events', json=[{"event": "restart"}, {"event": "followup","name": "action_listen"}])
         self.ui_lock = True
+        self.change_attributes = {"rasa": ""}
+        self.eraseFiles()
         #proc = Process(target=self.checkTaskCompletion, args=())
         #proc.start()
         #timer = QTimer(self)
@@ -490,6 +492,7 @@ class SpecificWorker(GenericWorker):
             bot_message = i['text']
             self.interaction.ui.display.append("<span style= color:blue; font-size:14pt >Robot: </span>" + bot_message + "\n")#f"{i['text']}""
             self.interaction.bot_message = bot_message
+        print("Chatbot started successfully!!!")
         return
 
     def restartChatbot(self):
