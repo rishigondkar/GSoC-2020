@@ -23,16 +23,25 @@ All the task proposed for this project have been successfully completed.
 
 ## Learnings
 
-This experience has given me immense learnings:
+This experience has given me immense learnings:  
 
-1. Write clean code and develop solutions which are complete without using any work-arounds
-2. Using git effectively
-3. Writing documentation
-4. Designing good structured code which is extensible
-5. Writing Tests for my code
-6. Work in a collaborative environment which required soft skills
+1. Following best practices in scripting and avoiding workarounds.
+2. Explore the functionalities of RASA to create chatbot solutions.
+3. Developed understanding of Active Grammer based Modelling.
+4. Envisage different Robot-Human interaction situations.
+5. Develop Python and C++ expertise
+6. Understand Software Development LifeCycle
+7. Work in a collaborative environment 
+
 
 I would like to Thank both my mentors who always guided me and encouraged me to work harder.
 
 ***
 Rishi Gondkar
+
+**Contact**:\
+For any query or suggestions related to the work, feel free to contact me at:\
+Email - [rishigondkar@gmail.com](mailto:rishigondkar@gmail.com) \
+Github Profile - https://github.com/RishiGondkar \
+Linkedin Profile - https://www.linkedin.com/in/rishi-gondkar-8b4199149/ \
+Profile - [Rishi Gondkar](https://rishigondkar.wixsite.com/profile)
