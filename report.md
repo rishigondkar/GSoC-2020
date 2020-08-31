@@ -33,8 +33,8 @@ In this project, I have worked on the conversationalAgent which uses RASA to cre
 
 
 ## Component that I worked on:
-During my GSoC duration i worked on these components:
-- [Conversational Agent](https://github.com/rahulkatiyar19955/gsoc-gui-dev/tree/master/humanObserverAgent_GUI)
+During my GSoC duration i worked on this component:
+- [Conversational Agent](https://github.com/RishiGondkar/GSoC-2020/tree/master/conversationalAgent)
 
 
 
