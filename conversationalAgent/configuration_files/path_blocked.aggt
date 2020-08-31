@@ -1,0 +1,11 @@
+{
+	3274:person(1,1)
+	1:robot(1,1)
+	3274->1(block)*
+	3274->1(softBlock)*
+	3274->1(affordanceBlock)*
+}
+precondition
+{
+}
+

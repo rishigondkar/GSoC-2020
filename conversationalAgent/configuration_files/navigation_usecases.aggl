@@ -1,0 +1,61 @@
+fontName=Arial
+fontSize=14
+lineThickness=2
+longPattern=3
+name=navigation_usecases_simple
+nodeThickness=2
+shortPattern=1
+spacePattern=3
+vertexDiameter=40
+===
+types
+{
+(battery)
+(person)
+(robot)
+(room)
+}
+===
+path_blocked : active(1)
+{
+	{
+		human:person(-235,-105)
+		robot:robot(-465,-110)
+		human->robot(block)
+	}
+	=>
+	{
+		human:person(-25,5)
+		robot:robot(-270,0)
+	}
+}
+
+
+path_softBlocked : active(1)
+{
+	{
+		human:person(-235,-105)
+		robot:robot(-465,-110)
+		human->robot(softBlock)
+	}
+	=>
+	{
+		human:person(-25,5)
+		robot:robot(-270,0)
+	}
+}
+
+path_affordanceBlock : active(1)
+{
+	{
+		human:person(-235,-105)
+		robot:robot(-465,-110)
+		human->robot(affordanceBlock)
+	}
+	=>
+	{
+		human:person(-25,5)
+		robot:robot(-270,0)
+	}
+}
+

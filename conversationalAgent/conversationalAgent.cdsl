@@ -1,0 +1,14 @@
+import "OmniRobot.idsl";
+import "Laser.idsl";
+import "InnerModelManager.idsl";
+Component conversationalAgent
+{
+    Communications
+    {
+	requires OmniRobot, Laser, InnerModelManager;
+    };
+	language Python;
+	gui Qt(QWidget);
+	options agmagent;	
+};
+
