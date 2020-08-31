@@ -1,0 +1,15 @@
+# GSoC'20 RoboComp project: NAME OF THE PROJECT
+ 
+DATE
+ 
+## About me
+ 
+SOME INFORMATION ABOUT YOU
+
+
+## About the Project
+
+DESCRIPTION OF THE PROJECT AND ITS GOALS
+
+
+YOUR NAME

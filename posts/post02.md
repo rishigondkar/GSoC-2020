@@ -8,7 +8,7 @@ Rasa has three main modules:
 3. **Rasa Action Server** for triggering external actions like calling API's or making external changes.
 
 ## Explaining modules and features in the context of our Agent:
-**Rasa NLU—** Here Rasa tries to understand User message to detect **Intent** and **Entity** in the message. The component used by NLU to detect intents in this project is Spacy and Tensorflow. We have created the following intents:
+**Rasa NLU—** This module of Rasa tries to understand User message to detect **Intent** and **Entity** in the message. The component used by NLU to detect intents in this project is Spacy and Tensorflow. We have created the following intents:
 * start
 * greet
 * accept
@@ -18,7 +18,7 @@ Rasa has three main modules:
 * chitchat
 >The invocations for the intent are stored in the NLU.md file.
 
-**Rasa Core—** Here Rasa helps with contextual message flow. Based on user message and intent classification by NLU it decides the response to be sent to the user. The responses are selected from the actions pre-written in the domain.yml file in the template section. The stories.md file contains the story templates. Rasa controls the flow of conversation between the user and chatbot according to theses templates, so for that flow, we need to train chatbot using these stories.
+**Rasa Core—** This module of Rasa helps with contextual message flow. Based on user message and intent classification by NLU it decides the response to be sent to the user. The responses are selected from the actions pre-written in the domain.yml file in the template section. The stories.md file contains the story templates. Rasa controls the flow of conversation between the user and chatbot according to theses templates, so for that flow, we need to train chatbot using these stories.
 
 **Rasa Action Server—** This server handles the execution of actions defined in actions.py file. The actions.py file contains python code to execute if that action is invoked during a conversation of the chatbot with the user. Actions are used to fill **Slots** from external sources and for calling API's for example REST API.
 
@@ -52,7 +52,7 @@ Rasa has three main modules:
 
 * The Rasa server and Action server are automatically started with the component conversationalAgent. 
 * A Rasa Dialog has also been created to make it easy for users to train model, start an interactive session .etc All the features will be shared in further posts.
-* You can also use shell commands to execute the chatbot. Link to Rasa docs: https://rasa.com/docs/rasa/user-guide/command-line-interface/
+* You can also use shell commands to execute the chatbot. Link to Rasa docs [here!](https://rasa.com/docs/rasa/user-guide/command-line-interface/)
 
 ***
 Rishi Gondkar
