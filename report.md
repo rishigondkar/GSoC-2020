@@ -14,7 +14,7 @@
 # Project Abstract
 In the real world, a robot needs to follow social etiquettes while moving around so as to not hurt any human. To follow these etiquettes the robot will have to speak with the person that is creating an obstacle in the robot's movement.  
 
-In this project, I have worked on the conversationalAgent which uses RASA to create personalized conversations according to the situation. I have also created a GUI for the displaying the conversation as well as for other functions.
+In this project, I have worked on the conversationalAgent which uses RASA to create personalized conversations according to the situation. I have also created a GUI for displaying the conversation as well as for other functions.
 
 
 
