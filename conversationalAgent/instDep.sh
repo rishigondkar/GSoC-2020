@@ -2,7 +2,7 @@
 
 cd configuration_files
 
-cp deployment_GSoC_conversationalAgent.xml executive_GSoC_conversationalAgent.conf humanObserverAgent_GUI.conf mission_GSoC_conversationalAgent.conf /home/robocomp/robocomp/components/robocomp-viriato/etcSim/
+cp deployment_GSoC_conversationalAgent.xml executive_GSoC_conversationalAgent.conf conversationalAgent.conf humanObserverAgent_GUI.conf mission_GSoC_conversationalAgent.conf /home/robocomp/robocomp/components/robocomp-viriato/etcSim/
 
 cp navigation_usecases.aggl /home/robocomp/robocomp/components/robocomp-viriato/aggl_plans/
 

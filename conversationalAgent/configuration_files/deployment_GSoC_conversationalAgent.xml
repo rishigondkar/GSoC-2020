@@ -49,7 +49,7 @@
  <node alias="mission" endpoint="commonbehavior:tcp -h localhost -p 11247">
   <dependence alias="executive" />
   <workingDir path="/home/robocomp/" />
-  <upCommand command="rcremote localhost mission /home/robocomp/ agmmission /home/robocomp/robocomp/components/robocomp-viriato/etcSim/mission.conf" />
+  <upCommand command="rcremote localhost mission /home/robocomp/ agmmission /home/robocomp/robocomp/components/robocomp-viriato/etcSim/mission_GSoC_conversationalAgent.conf" />
   <downCommand command="killall -9 agmmission" />
   <configFile path="kate /home/robocomp/robocomp/components/robocomp-viriato/etcSim/mission_GSoC_conversationalAgent.conf" />
   <xpos value="-85.8500602298" />
