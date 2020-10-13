@@ -2,11 +2,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting
 * greet
   - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}
   - utter_move_sit_3
   - action_link_waiting
 * accept
@@ -19,11 +19,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * reject
@@ -40,11 +40,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}    
+  - action_link_talking    
   - utter_move_sit_3
   - action_link_waiting
 * reject
@@ -64,11 +64,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}    
+  - action_link_talking    
   - utter_move_sit_3
   - action_link_waiting
 * reject
@@ -92,11 +92,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}    
+  - action_link_talking    
   - utter_move_sit_3
   - action_link_waiting
 * reject
@@ -124,11 +124,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}    
+  - action_link_talking    
   - utter_move_sit_3
   - action_link_waiting
 * repeat
@@ -144,11 +144,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}    
+  - action_link_talking    
   - utter_move_sit_3
   - action_link_waiting
 * repeat
@@ -168,11 +168,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}    
+  - action_link_talking    
   - utter_move_sit_3
   - action_link_waiting
 * repeat
@@ -197,11 +197,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}    
+  - action_link_talking    
   - utter_move_sit_3
   - action_link_waiting
 * repeat
@@ -221,11 +221,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}    
+  - action_link_talking    
   - utter_move_sit_3
   - action_link_waiting
 * reject
@@ -245,11 +245,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}    
+  - action_link_talking    
   - utter_move_sit_3
   - action_link_waiting
 * repeat
@@ -274,11 +274,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting
 * greet
   - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}
   - utter_move_sit_3
   - action_link_waiting
 * chitchat
@@ -294,11 +294,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting
 * greet
   - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}
   - utter_move_sit_3
   - action_link_waiting
 * chitchat
@@ -318,11 +318,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * chitchat
@@ -342,11 +342,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * reject
@@ -366,11 +366,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * chitchat
@@ -394,11 +394,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * chitchat
@@ -422,11 +422,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * reject
@@ -452,11 +452,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * chitchat
@@ -480,11 +480,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * reject
@@ -508,11 +508,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * reject
@@ -536,11 +536,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * chitchat
@@ -568,11 +568,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * chitchat
@@ -600,11 +600,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * reject
@@ -632,11 +632,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * reject
@@ -664,11 +664,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * chitchat
@@ -697,11 +697,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * chitchat
@@ -729,11 +729,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * chitchat
@@ -765,11 +765,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * chitchat
@@ -802,11 +802,11 @@
 * start
   - action_link_talking
   - utter_greet     
+  - action_set_situation
+  - slot{"situation": "three"}
   - action_link_waiting         
 * greet
-  - action_link_talking
-  - action_set_situation
-  - slot{"situation": "three"}             
+  - action_link_talking             
   - utter_move_sit_3
   - action_link_waiting
 * chitchat

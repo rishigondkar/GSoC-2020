@@ -13,11 +13,16 @@ actions:
   - utter_greet
   - utter_thanks 
   # Situation 1
-  - utter_move_sit_1
-  - utter_repeat_sit_1
-  - utter_again_sit_1
-  - utter_frustated_sit_1
-  - utter_handle_chitchat_sit_1
+  - utter_move_female_1
+  - utter_move_male_1
+  - utter_repeat_male_1
+  - utter_repeat_female_1
+  - utter_again_male_1
+  - utter_again_female_1
+  - utter_frustated_male_1
+  - utter_frustated_female_1
+  - utter_handle_chitchat_male_1
+  - utter_handle_chitchat_female_1
   # Situation 2
   - utter_move_sit_2
   - utter_repeat_sit_2
@@ -31,9 +36,12 @@ actions:
   - utter_frustated_sit_3
   - utter_handle_chitchat_sit_3
   # Situation 4
-  - utter_turn_sit_4
-  - utter_again_sit_4
-  - utter_frustrated_sit_4
+  - utter_turn_male_sit_4
+  - utter_turn_female_sit_4
+  - utter_again_male_sit_4
+  - utter_again_female_sit_4
+  - utter_repeat_male_1
+  - utter_repeat_female_1
   # Actions
   - action_set_gender
   - action_set_situation
@@ -72,31 +80,55 @@ templates:
 
 #-------------------------------------------------------------Situation 1-------------------------------------------------------------
 
-  utter_move_sit_1:
-  - text: "I'm sorry, but could you step aside for a moment?"
-  - text: "Excuse me, could I get past you?"
-  - text: "Would you kindly move to one side for a moment?"
-  - text: "I'd appreciate if you let me by"
+  utter_move_female_1:
+  - text: "I'm sorry Ma'am, but could you step aside for a moment?"
+  - text: "Excuse me Ma'am, could I get past you?"
+  - text: "Ma'am would you kindly move to one side for a moment?"
+  - text: "I'd appreciate if you let me by Ma'am."
 
-  utter_repeat_sit_1:
-  - text: "I said, could you step aside for a moment please?"
-  - text: "What I said was, could you step aside for a moment please?"
+  utter_move_male_1:
+  - text: "I'm sorry Sir, but could you step aside for a moment?"
+  - text: "Excuse me Sir, could I get past you?"
+  - text: "Sir would you kindly move to one side for a moment?"
+  - text: "I'd appreciate if you let me by Sir"
 
-  utter_again_sit_1:
-  - text: "I understand I'm inconveniencing you but could you please step aside for a moment?"
-  - text: "I'm sorry to bother you, but I need to pass and this is the only way, could you please step aside?"
-  - text: "I don't want to disturb you, but this is the only way, could you please step aside?"
-  - text: "Please try to understand, I really need to pass could you please step aside for a moment?"
+  utter_repeat_male_1:
+  - text: "I said, could you step aside for a moment please Sir?"
+  - text: "What I said was, could you step aside for a moment please Sir?"
 
-  utter_frustated_sit_1:
-  - text: "Let's not waste each other's time, please step aside just for a moment, please."
-  - text: "I wouldn't want to waste anyone's time, but I really need to pass, please step aside" 
+  utter_repeat_female_1:
+  - text: "I said, could you step aside for a moment please Ma'am?"
+  - text: "What I said was, could you step aside for a moment please Ma'am?"
 
-  utter_handle_chitchat_sit_1:
-  - text: "Time is of essence for both of us, lets not waste it in chitchat. Can you please move aside and let me pass?"
-  - text: "Time is of essence for both of us, lets not waste it in small talk. Can you please move aside and let me pass?"
-  - text: "I am sure you understand the importance of both of our time, lets not waste it in chitchat. Can you please move aside and let me pass?"
+  utter_again_male_1:
+  - text: "I understand I'm inconveniencing you but could you please step aside for a moment Sir?"
+  - text: "I'm sorry to bother you Sir, but I need to pass and this is the only way, could you please step aside?"
+  - text: "I don't want to disturb you Sir, but this is the only way, could you please step aside?"
+  - text: "Please try to understand Sir, I really need to pass could you please step aside for a moment?"
 
+  utter_again_female_1:
+  - text: "I understand I'm inconveniencing you Ma'am, but could you please step aside for a moment?"
+  - text: "I'm sorry to bother you Ma'am, but I need to pass and this is the only way, could you please step aside?"
+  - text: "I don't want to disturb you Ma'am, but this is the only way, could you please step aside?"
+  - text: "Please try to understand Ma'am, I really need to pass could you please step aside for a moment?"
+
+  utter_frustated_male_1:
+  - text: "Let's not waste each other's time Sir, please step aside just for a moment, please."
+  - text: "I wouldn't want to waste anyone's time, but I really need to pass, please step aside Sir" 
+
+  utter_frustated_female_1:
+  - text: "Let's not waste each other's time Ma'am, please step aside just for a moment, please."
+  - text: "I wouldn't want to waste anyone's time Ma'am, but I really need to pass, please step aside"
+
+  utter_handle_chitchat_male_1:
+  - text: "Sir, time is of essence for both of us, lets not waste it in chitchat. Can you please move aside and let me pass?"
+  - text: "Sir, time is of essence for both of us, lets not waste it in small talk. Can you please move aside and let me pass?"
+  - text: "Sir, I am sure you understand the importance of both of our time, lets not waste it in chitchat. Can you please move aside and let me pass?"
+
+  utter_handle_chitchat_female_1:
+  - text: "Ma'am, time is of essence for both of us, lets not waste it in chitchat. Can you please move aside and let me pass?"
+  - text: "Ma'am, time is of essence for both of us, lets not waste it in small talk. Can you please move aside and let me pass?"
+  - text: "Ma'am, I am sure you understand the importance of both of our time, lets not waste it in chitchat. Can you please move aside and let me pass?"
 #-------------------------------------------------------------Situation 2-------------------------------------------------------------
 
   utter_move_sit_2:
@@ -162,18 +194,32 @@ templates:
 #-------------------------------------------------------------Situation 4 Near-------------------------------------------------------------
 
 
-  utter_turn_sit_4:
-  - text: "Can you please turn around?"
-  - text: "I request you to please turn around."
-  - text: "I want to speak with you, can you please turn around?"
+  utter_turn_male_sit_4:
+  - text: "Sir, can you please turn around?"
+  - text: "Sir, I request you to please turn around."
+  - text: "Sir, I want to speak with you, can you please turn around?"
 
-  utter_again_sit_4:
-  - text: "I am speaking with you, can you pleaseturn around?"
-  - text: "Can you please look at me, I am speaking with you."
-  - text: "Please turn around and look at me, I am talking with you."
+  utter_turn_female_sit_4:
+  - text: "Ma'am, can you please turn around?"
+  - text: "Ma'am, I request you to please turn around."
+  - text: "Ma'am, I want to speak with you, can you please turn around?"
 
-  utter_frustrated_sit_4:
-  - text: "Please face me when I am talking!"
-  - text: "Please turn around, I am talking with you!"
-  - text: "Time is of essence, lets not waste it. Please turn around."
+  utter_again_male_sit_4:
+  - text: "Sir, I am speaking with you, can you pleaseturn around?"
+  - text: "Sir, Can you please look at me, I am speaking with you."
+  - text: "Sir, please turn around and look at me, I am talking with you."
 
+  utter_again_female_sit_4:
+  - text: "Ma'am, I am speaking with you, can you pleaseturn around?"
+  - text: "Ma'am, can you please look at me, I am speaking with you."
+  - text: "Ma'am, please turn around and look at me, I am talking with you."
+
+  utter_frustrated_male_sit_4:
+  - text: "Sir, please face me when I am talking!"
+  - text: "Sir, please turn around, I am talking with you!"
+  - text: "Sir, time is of essence, lets not waste it. Please turn around."
+
+  utter_frustrated_female_sit_4:
+  - text: "Ma'am, please face me when I am talking!"
+  - text: "Ma'am, please turn around, I am talking with you!"
+  - text: "Ma'am, time is of essence, lets not waste it. Please turn around."

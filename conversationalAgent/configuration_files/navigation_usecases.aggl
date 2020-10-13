@@ -59,3 +59,34 @@ path_affordanceBlock : active(1)
 	}
 }
 
+path_is_blocking : active(1)
+{
+	{
+		human:person(-235,-105)
+		robot:robot(-465,-110)
+		human->robot(is_blocking)
+	}
+	=>
+	{
+		human:person(-25,5)
+		robot:robot(-270,0)
+	}
+}
+
+takeTheAttention : active(1)
+{
+	{
+		p:person(-15,-25)
+		robot:robot(-150,50)
+		robot->p(is_near)
+	}
+	=>
+	{
+		p:person(75,0)
+		robot:robot(-105,90)
+		p->robot(front)
+		robot->p(is_near)
+	}
+}
+
+

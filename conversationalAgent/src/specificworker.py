@@ -458,7 +458,7 @@ class SpecificWorker(GenericWorker):
             attrs = self.change_attributes
             try:
                 model = self.worldModel
-                model.addEdge(self.human_id, self.robot_id, self.link, attrs)
+                model.addEdge(self.human_id, self.robot_id, "interacting", attrs)
                 self.updatingDSR()
             except:
                 print("Could not change attributes of link")
@@ -497,6 +497,9 @@ class SpecificWorker(GenericWorker):
             self.human_gender = ''
             self.link = ''
             self.change_attributes = {}
+            model = self.worldModel
+            model.removeEdge(self.human_id, self.robot_id, "interacting")
+            self.updatingDSR()
             return
 
     #Function to start chatbot and initialize conversation
@@ -703,48 +706,83 @@ class SpecificWorker(GenericWorker):
                 
                 if self.interaction.interactionUI == False:
                     print("--------------Planning to start UI-------------------------")
-                    if prs['action'].value == 'path_blocked':
+
+
+                    if prs['action'].value == 'takeTheAttention':
                         if self.interaction.isVisible() == False:
                             self.interaction.interactionUI = True
-                            self.situation = 'one'
-                            self.link = "block"
+                            self.situation = 'four'
+                            self.link = "is_near"
                             self.human_id = prs['human'].value
                             self.robot_id = prs['robot'].value
                             self.writeToFile(prs['human'].value, self.situation)
                             self.startChatbot()
-                    
-                    elif prs['action'].value == 'path_softBlocked':
+
+
+                    elif prs['action'].value == 'path_is_blocking':
+                        self.interaction.interactionUI = True              
                         if self.interaction.isVisible() == False:
-                            self.interaction.interactionUI = True
-                            self.situation = 'two'
-                            self.link = "softBlock"
-                            self.human_id = prs['human'].value
-                            self.robot_id = prs['robot'].value
-                            self.writeToFile(self.situation)
-                            self.startChatbot()
+                            is_blocking_count = 0
+                            for link in src.links:
+                                if link.linkType == "is_blocking":
+                                    is_blocking_count = is_blocking_count + 1
+                            if is_blocking_count == 1:
+                                self.situation = 'one'
+                                self.link = "block"
+                                self.human_id = prs['human'].value
+                                self.robot_id = prs['robot'].value
+                                self.writeToFile(prs['human'].value, self.situation)
+                                self.startChatbot()
+                    
+                        
+                            elif is_blocking_count > 1:
+                                self.interaction.interactionUI = True
+                                self.situation = 'two'
+                                self.link = "is_blocking" #"softBlock"
+                                self.human_id = prs['human'].value
+                                self.robot_id = prs['robot'].value
+                                self.writeToFile(self.situation)
+                                self.startChatbot()
                     
                     elif prs['action'].value == 'path_affordanceBlock':
                         if self.interaction.isVisible() == False:
                             self.interaction.interactionUI = True
                             self.situation = 'three'
-                            self.link = "affordanceBlock"
+                            self.link = "is_blocking" #"affordanceBlock"
                             self.human_id = prs['human'].value
                             self.robot_id = prs['robot'].value
                             self.writeToFile(prs['human'].value, self.situation)
                             self.startChatbot()
+
+
 
                     else:
                         print("Wrong Plan Recieved")
 
                 else:        
 
-                    if prs['action'].value == 'path_blocked':
+                    if prs['action'].value == 'takeTheAttention':
                         if self.interaction.isVisible() == False:
                             self.interaction.show()  
                     
-                    elif prs['action'].value == 'path_softBlocked':
-                        if self.interaction.isVisible() == False:
-                            self.interaction.show()
+                    elif prs['action'].value == 'path_is_blocking':
+                        if self.situation == 'four':
+                            flag_near = False
+                            for link in self.worldModel.links:
+                                if link.linkType == "is_near":
+                                    flag_near = True
+                            if flag_near == False:
+                                self.interaction.interactionUI = False
+                                #self.interaction.ui.display.clear()
+                                #self.interaction.ui.textbox.clear()
+                                self.interaction.hide()
+                                r = requests.post('http://localhost:5002/conversations/default/tracker/events', json=[{"event": "restart"}, {"event": "followup","name": "action_listen"}])
+                                print(r)
+                                print("Conversation cleared")
+                                self.AGMCommonBehavior_activateAgent(prs)
+                        else:
+                            if self.interaction.isVisible() == False:
+                                self.interaction.show()
                     
                     elif prs['action'].value == 'path_affordanceBlock':
                         if self.interaction.isVisible() == False:
