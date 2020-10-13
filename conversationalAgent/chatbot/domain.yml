@@ -56,6 +56,7 @@ slots:
     - one
     - two
     - three
+    - four
 
 templates:
 
