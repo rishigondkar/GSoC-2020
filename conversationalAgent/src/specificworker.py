@@ -719,30 +719,26 @@ class SpecificWorker(GenericWorker):
                             self.startChatbot()
 
 
-                    elif prs['action'].value == 'path_is_blocking':
-                        self.interaction.interactionUI = True              
+                    elif prs['action'].value == 'askForIndividualPermission':
                         if self.interaction.isVisible() == False:
-                            is_blocking_count = 0
-                            for link in src.links:
-                                if link.linkType == "is_blocking":
-                                    is_blocking_count = is_blocking_count + 1
-                            if is_blocking_count == 1:
-                                self.situation = 'one'
-                                self.link = "block"
-                                self.human_id = prs['human'].value
-                                self.robot_id = prs['robot'].value
-                                self.writeToFile(prs['human'].value, self.situation)
-                                self.startChatbot()
+                            self.interaction.interactionUI = True  
+                            self.situation = 'one'
+                            self.link = "block"
+                            self.human_id = prs['human'].value
+                            self.robot_id = prs['robot'].value
+                            self.writeToFile(prs['human'].value, self.situation)
+                            self.startChatbot()
                     
                         
-                            elif is_blocking_count > 1:
-                                self.interaction.interactionUI = True
-                                self.situation = 'two'
-                                self.link = "is_blocking" #"softBlock"
-                                self.human_id = prs['human'].value
-                                self.robot_id = prs['robot'].value
-                                self.writeToFile(self.situation)
-                                self.startChatbot()
+                    elif prs['action'].value == 'askForGroupalPermission':
+                        if self.interaction.isVisible() == False:
+                            self.interaction.interactionUI = True
+                            self.situation = 'two'
+                            self.link = "is_blocking" #"softBlock"
+                            self.human_id = prs['human'].value
+                            self.robot_id = prs['robot'].value
+                            self.writeToFile(self.situation)
+                            self.startChatbot()
                     
                     elif prs['action'].value == 'path_affordanceBlock':
                         if self.interaction.isVisible() == False:
