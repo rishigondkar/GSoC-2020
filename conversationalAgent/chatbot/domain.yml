@@ -43,13 +43,9 @@ actions:
 
 entities:
   - gender
+  - situation
 
 slots:
-  gender:
-    type: categorical
-    values:
-    - male
-    - female
   situation:
     type: categorical
     values:

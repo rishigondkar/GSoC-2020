@@ -78,6 +78,7 @@ class actionSetSituation(Action):
     return "action_set_situation"
 
   def run(self, dispatcher, tracker, domain):
+    print("action_set_situation")
     with open('person_attributes.json', 'r') as openfile: 
         # Reading from json file 
         json_object = json.load(openfile)
